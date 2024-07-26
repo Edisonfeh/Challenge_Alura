@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    
+    box-sizing: border-box;
+    
+    
+    }
+    .header{
+    padding: 2% 0 0 16%;
+    background-color: #8398ac;
+    
+    width: 84.25vw; /* ancho de footer*/
+    }
+    
+    .header__menu__link{
+
+    color: rgb(190, 206, 169);
+    padding: 10px;
+    text-align: center;
+    font-family: "Kumar One", serif;
+    justify-content: flex;
+    width: 97.1vw; /* ancho de footer*/
+    gap: 20%;
+    text-decoration: none;
+    
+    }
+.fondo_pagina{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        background-image: url(./assets/mesh.png);
+        background-size:cover;
+        background-position: center;
+        flex-direction:unset;
+        ;
+        }
+        
+        .presentacion{
+            margin: 2% 2%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+            }
+            .presentacion__contenido{
+                width: 615px;
+                display: flex;
+                flex-direction: column; /*establece elementos de forma de columna*/
+                gap: 30px; /* crea un espacio entre elemetos*/
+                align-items: center;
+                
+                
+                }
+            .estilo__fuente__titulo{
+                font-size: 29px;
+                color: #000000;
+                font-family: "Kumar One", serif;
+                align-items: center;
+                }
+input{
+    height: 100px;width: 610px;
+    font-size: 29px;
+    }
+    .presentacion__botones{
+        display: flex;
+        align-items: center;  
+        justify-content: center; /*alinea los botones*/
+        gap: 80px;
+        }
+        .estilo__boton__encriptador{
+            width: 250px;            
+            text-align: center;
+            padding: 21.5px 0;
+            border-radius: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            text-decoration: none;
+            color: black;
+            border: 2px groove #22d4fd;
+            flex-direction: column;    
+            }
+            .estilo__boton__encriptador:hover{
+                background-color: #727272; /* cambia color de botones cuando pasamos el curso por encima*/
+            }
+            .estilo__cajadetexto{
+                color: black;
+                border: 2px solid #e2dbce;/* borde de la caja de texto y color*/
+                border-radius: 16px; /* inclinacion o circulo de la caja de texto*/
+                
+                }
+.estilo__boton__copiar{
+    display: flex;
+    width: 380px;            
+    text-align: center;
+    padding: 21.5px ;
+    border-radius: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    border: 2px groove #22d4fd;
+    flex-direction: column;
+    }
+.estilo__boton__copiar:hover{
+    background-color: #727272;/* cambia color de botones cuando pasamos el curso por encima*/
+    padding: 21.5% 10; /*espacio entre el borde del boton y el texto*/
+   
+}
+.footer{
+    
+    background-color: #8398ac;
+    color: beige;
+    padding: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    justify-content: flex;
+    width: 97.1vw; /* ancho de footer*/
+    
+
+}
+
+
