@@ -11,7 +11,7 @@ inputDestino.style.display ="none";
 imagen1.style.display = "block"
 //funcion para encriptar
 function encriptarTexto(texto){
-    if (/^[a-zñ]+$/.test(texto)) {
+    if (/^[a-z ñ]+$/.test(texto)) {
         alert("El texto debe ser en minúsculas,sin acentos y sin caracteres especiales");//validacion de caracteres especiales en boton encriptar
         return undefined;
         
@@ -29,7 +29,7 @@ function encriptarTexto(texto){
 //Funcion para desencriptar texto
 
 function DesencriptarTexto(texto) {
-    if (/^[a-zñ]+$/.test(texto)) {
+    if (/^[a-z ñ]+$/.test(texto)) {
         alert("El texto debe ser en minúsculas,sin acentos y sin caracteres especiales");//validacion de caracteres especiales en boton desencriptar
         return undefined;
         
