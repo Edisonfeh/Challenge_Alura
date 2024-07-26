@@ -11,9 +11,9 @@ inputDestino.style.display ="none";
 imagen1.style.display = "block"
 //funcion para encriptar
 function encriptarTexto(texto){
-    if (!/^[a-zñ]+$/.test(texto)) {
+    if (/^[a-zñ]+$/.test(texto)) {
         alert("El texto debe ser en minúsculas,sin acentos y sin caracteres especiales");//validacion de caracteres especiales en boton encriptar
-        return;
+        return undefined;
         
     }
     const reglas ={
@@ -29,9 +29,9 @@ function encriptarTexto(texto){
 //Funcion para desencriptar texto
 
 function DesencriptarTexto(texto) {
-    if (!/^[a-zñ]+$/.test(texto)) {
+    if (/^[a-zñ]+$/.test(texto)) {
         alert("El texto debe ser en minúsculas,sin acentos y sin caracteres especiales");//validacion de caracteres especiales en boton desencriptar
-        return;
+        return undefined;
         
     }
     const reglas ={
@@ -64,17 +64,17 @@ botonEncriptar.addEventListener("click",()=>{
 });
 // Codigo del boton desencritar
 botonDesencriptar.addEventListener("click",()=>{
-        
-    //obtiene valor del input destino
-    const valor = inputOrigen.value;
-    // Desncriptar texto   
-    const textoDesencriptado = DesencriptarTexto(valor);
-     //Asigna el texto desencriptado al input origen
-     if (textoDesencriptado !== undefined) {
-        inputDestino.value=textoDesencriptado;
-     }
-   
-});
+  const textoEncriptado=DesencriptarTexto(inputOrigen.value);
+  //verificar si el texto se ecriptó correctamenete
+  if (textoEncriptado !== undefined) {
+      inputDestino.value = textoEncriptado; //muestra el input destinpo con el texto encriptado
+      inputDestino.style.display = "block";
+      botonCopiar.style.display = "block";//muestra el botón copiar
+      imagen1.style.display="none";
+  }
+  
+  
+ });
 
 //Codigo del boton Copiar
 botonCopiar.addEventListener("click",()=>{
