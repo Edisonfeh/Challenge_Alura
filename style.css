@@ -10,7 +10,7 @@ body{
     flex-direction: 
     background-image: linear-gradient(135deg
     ,#7ec9f5,#3957ed,#3e7a9c,#3957ed);
-   
+    background-color: #69ddec;
     
     justify-content: flex;
     box-sizing: border-box;
@@ -37,18 +37,7 @@ body{
     text-decoration: none;
     
     }
-.fondo_pagina{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        
-        background-size:cover;
-        background-position: center;
-        flex-direction:unset;
-        ;
-        }
+
         
         .presentacion{
             margin: 2% 2%;
