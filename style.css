@@ -7,25 +7,14 @@
 body{
     font-size: 1rem;
     box-sizing: border-box;
-    flex-direction: 
-    background-image: linear-gradient(135deg
-    ,#7ec9f5,#3957ed,#3e7a9c,#3957ed);
-    background-color: #69ddec;
     
+    background-image: linear-gradient(135deg
+    ,#7ec9f5,#3957ed,#3e7a9c,#3957ed,#3957ed);
+    background-color: #69ddec;
     justify-content: flex;
     box-sizing: border-box;
-    .fondo_pagina{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content:center;
-        
-        background-size:cover;
-        background-position: center;
-        flex-direction:unset;
-        ;
-        }
+    justify-items: flex;
+    
     
     }
     .header{
@@ -33,7 +22,7 @@ body{
     background-image: linear-gradient(135deg
     ,#3e7ea5,#1a455e,#142785);
     
-    width: 84.25vw; /* ancho de footer*/
+    width: 90.25vw; /* ancho de footer*/
     }
     
     .header__menu__link{
@@ -48,7 +37,18 @@ body{
     text-decoration: none;
     
     }
-
+.fondo_pagina{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        
+        background-size:cover;
+        background-position: center;
+        flex-direction:unset;
+        ;
+        }
         
         .presentacion{
             margin: 2% 2%;
@@ -62,7 +62,7 @@ body{
                 width: 50%;
                 display: flex;
                 flex-direction: column; /*establece elementos de forma de columna*/
-                gap: 30px; /* crea un espacio entre elemetos*/
+                gap: 20px; /* crea un espacio entre elemetos*/
                 align-items: center;
                 
                 
@@ -125,6 +125,7 @@ input{
                 }
     .imagen__presentacion{
         width: 30%;
+        
     }
                 
 .estilo__boton__copiar{
@@ -159,7 +160,7 @@ input{
     
 
 }
-@media  (max-width: 300px) {
+@media  (max-width: 700px) {
     .presentacion__botones{
         flex-direction: row;
         justify-content: flex;
@@ -167,7 +168,7 @@ input{
     .presentacion{
         flex-direction: column-reverse;
         justify-content: flex;
-        
+       
         width: auto;
     }
    .estilo__cajadetexto{
@@ -180,7 +181,6 @@ input{
    .presentacion__contenido{
     width: auto;
    }
-
 }
 
 
