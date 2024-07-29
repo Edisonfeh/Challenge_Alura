@@ -167,9 +167,14 @@ input{
         flex-direction: column-reverse;
         justify-content: flex;
     }
-   input{
+   .estilo__cajadetexto{
     justify-content: flex;
    }
+   .presentacion__botones
+   {
+    justify-content: flex;
+   }
+
 }
 
 
