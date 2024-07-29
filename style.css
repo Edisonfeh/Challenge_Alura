@@ -160,7 +160,7 @@ input{
 }
 @media  (max-width: 800px) {
     .presentacion__botones{
-        flex-direction: column;
+        flex-direction: row;
     }
     .presentacion{
         flex-direction: column-reverse;
