@@ -161,9 +161,11 @@ input{
 @media  (max-width: 800px) {
     .presentacion__botones{
         flex-direction: row;
+        justify-content: flex;
     }
     .presentacion{
         flex-direction: column-reverse;
+        justify-content: flex;
     }
    
 }
