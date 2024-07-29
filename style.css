@@ -159,7 +159,7 @@ input{
     
 
 }
-@media  (max-width: 700px) {
+@media  (max-width: 300px) {
     .presentacion__botones{
         flex-direction: row;
         justify-content: flex;
