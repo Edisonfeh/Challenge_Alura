@@ -166,6 +166,8 @@ input{
     .presentacion{
         flex-direction: column-reverse;
         justify-content: flex;
+        padding: 5%;
+        width: auto;
     }
    .estilo__cajadetexto{
     justify-content: flex;
@@ -173,6 +175,9 @@ input{
    .presentacion__botones
    {
     justify-content: flex;
+   }
+   .presentacion__contenido{
+    width: auto;
    }
 
 }
