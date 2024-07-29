@@ -5,7 +5,12 @@
     margin: 0;
 }
 body{
+    font-size: 1rem;
+    box-sizing: border-box;
     
+    background-image: linear-gradient(135deg
+    ,#7ec9f5,#3957ed,#3e7a9c,#3957ed);
+    background-color: #69ddec;
     
     box-sizing: border-box;
     
@@ -13,7 +18,8 @@ body{
     }
     .header{
     padding: 2% 0 0 16%;
-    background-color: #8398ac;
+    background-image: linear-gradient(135deg
+    ,#3e7ea5,#1a455e,#142785);
     
     width: 84.25vw; /* ancho de footer*/
     }
@@ -25,7 +31,7 @@ body{
     text-align: center;
     font-family: "Kumar One", serif;
     justify-content: flex;
-    width: 97.1vw; /* ancho de footer*/
+    width: 50%; /* ancho de footer*/
     gap: 20%;
     text-decoration: none;
     
@@ -36,7 +42,7 @@ body{
         display: flex;
         align-items: center;
         justify-content:center;
-        background-image: url(./assets/mesh.png);
+        
         background-size:cover;
         background-position: center;
         flex-direction:unset;
@@ -48,11 +54,11 @@ body{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            
+            gap: 82px;
             
             }
             .presentacion__contenido{
-                width: 615px;
+                width: 50%;
                 display: flex;
                 flex-direction: column; /*establece elementos de forma de columna*/
                 gap: 30px; /* crea un espacio entre elemetos*/
@@ -61,14 +67,16 @@ body{
                 
                 }
             .estilo__fuente__titulo{
-                font-size: 29px;
-                color: #000000;
+                font-size: 1.81rem;
+                color: #0a0a0a;
                 font-family: "Kumar One", serif;
                 align-items: center;
                 }
 input{
-    height: 100px;width: 610px;
-    font-size: 29px;
+    height: 100px;width: 100%;
+    font-size: 1.1rem;
+
+    
     }
     .presentacion__botones{
         display: flex;
@@ -77,20 +85,36 @@ input{
         gap: 80px;
         }
         .estilo__boton__encriptador{
-            width: 250px;            
+            width: 60%;            
             text-align: center;
             padding: 21.5px 0;
             border-radius: 16px;
             font-family: "Montserrat", sans-serif;
-            font-size: 24px;
-            font-weight: 600;
+            font-size: 0.8rem;
+            font-weight: 500;
             text-decoration: none;
             color: black;
-            border: 2px groove #22d4fd;
+            border: 4px groove #22d4fd;
             flex-direction: column;    
             }
             .estilo__boton__encriptador:hover{
                 background-color: #727272; /* cambia color de botones cuando pasamos el curso por encima*/
+            }
+            .estilo__boton__Desencriptador{
+                width: 60%;            
+            text-align: center;
+            padding: 21.5px 0;
+            border-radius: 16px;
+            font-family: "Montserrat", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-decoration: none;
+            color: black;
+            border: 4px groove #22d4fd;
+            flex-direction: column; 
+            }
+            .estilo__boton__Desencriptador:hover{
+                background-color: #727272;/* cambia color de botones cuando pasamos el curso por encima*/
             }
             .estilo__cajadetexto{
                 color: black;
@@ -98,14 +122,18 @@ input{
                 border-radius: 16px; /* inclinacion o circulo de la caja de texto*/
                 
                 }
+    .imagen__presentacion{
+        width: 30%;
+    }
+                
 .estilo__boton__copiar{
     display: flex;
-    width: 380px;            
+    width: 50%;           
     text-align: center;
     padding: 21.5px ;
     border-radius: 16px;
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
     color: black;
@@ -119,7 +147,8 @@ input{
 }
 .footer{
     
-    background-color: #8398ac;
+    background-image: linear-gradient(135deg
+    ,#7ec9f5,#3957ed,#7ec9f5,#3957ed);
     color: beige;
     padding: 20px;
     text-align: center;
@@ -128,6 +157,15 @@ input{
     width: 97.1vw; /* ancho de footer*/
     
 
+}
+@media  (max-width: 800px) {
+    .presentacion__botones{
+        flex-direction: column;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+    }
+   
 }
 
 
