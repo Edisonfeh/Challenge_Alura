@@ -43,9 +43,8 @@ body{
         align-items: center;
         justify-content:center;
         
-        background-image: linear-gradient(135deg,#7ec9f5,#3957ed,#3e7a9c,#3957ed);
-    background-color: #69ddec;
-        
+        background-size:cover;
+        background-position: center;
         flex-direction:unset;
         ;
         }
@@ -168,7 +167,9 @@ input{
         flex-direction: column-reverse;
         justify-content: flex;
     }
-   
+   input{
+    justify-content: flex;
+   }
 }
 
 
