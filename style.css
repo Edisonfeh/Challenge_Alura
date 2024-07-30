@@ -18,35 +18,34 @@ body{
     
     }
     .header{
-    padding: 2% 0 0 16%;
+    padding: 2% 0 0 20%;
     background-image: linear-gradient(135deg
     ,#3e7ea5,#1a455e,#142785);
-    
-    width: 90.25vw; /* ancho de footer*/
+    width: 80.5vw;
+   
     }
     
     .header__menu__link{
-
+        
     color: rgb(190, 206, 169);
     padding: 10px;
     text-align: center;
     font-family: "Kumar One", serif;
     justify-content: flex;
-    width: 50%; /* ancho de footer*/
     gap: 20%;
     text-decoration: none;
     
     }
 .fondo_pagina{
-        width: 100vw;
+        width: 100.39vw;
         height: 100vh;
         display: flex;
         align-items: center;
         justify-content:center;
-        
-        background-size:cover;
-        background-position: center;
-        flex-direction:unset;
+        background-image: linear-gradient(135deg
+        ,#7ec9f5,#3957ed,#3e7a9c,#3957ed,#3957ed);
+        background-color: #69ddec;
+       
         ;
         }
         
@@ -181,6 +180,10 @@ input{
    .presentacion__contenido{
     width: auto;
    }
+   .fondo_pagina{
+    width: auto;
+   }
+   
 }
 
 
